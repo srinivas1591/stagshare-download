@@ -32,7 +32,7 @@
     }
     main { max-width: 960px; margin: 0 auto; padding: 48px 16px 32px; }
     header { text-align: center; margin-bottom: 40px; }
-    header img { width: 128px; height: 128px; filter: drop-shadow(0 12px 40px rgba(109, 124, 255, 0.45)); }
+    header img { width: 128px; height: 128px; filter: drop-shadow(0 12px 40px rgba(83, 74, 183, 0.5)); }
     h1 {
       margin: 12px 0 8px;
       font-size: clamp(2.2rem, 6vw, 3.2rem);
@@ -96,25 +96,25 @@
     </header>
 
     <div class="grid" id="downloads">
-      <a class="card" data-os="android" href="files/Stagshare-1.0.0.apk" download>
+      <a class="card" data-os="android" href="files/Stagshare-1.1.0.apk" download>
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 9.48l1.84-3.18a.38.38 0 0 0-.66-.38l-1.86 3.22a11.4 11.4 0 0 0-9.84 0L5.22 5.92a.38.38 0 0 0-.66.38L6.4 9.48A10.8 10.8 0 0 0 1 18h22a10.8 10.8 0 0 0-5.4-8.52zM7 15.25a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5zm10 0a1.25 1.25 0 1 1 0-2.5 1.25 1.25 0 0 1 0 2.5z"/></svg>
         <h2>Android</h2>
-        <span class="meta">Android 10 or newer · APK · 52 MB</span>
+        <span class="meta">Android 10 or newer · APK · 51 MB</span>
         <span class="button">Download</span>
       </a>
-      <a class="card" data-os="mac" href="files/Stagshare-1.0.0.dmg" download>
+      <a class="card" data-os="mac" href="files/Stagshare-1.1.0.dmg" download>
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.37 12.8c-.02-2.3 1.88-3.4 1.97-3.46-1.07-1.57-2.74-1.78-3.33-1.8-1.42-.15-2.77.83-3.49.83-.72 0-1.83-.81-3.01-.79-1.55.02-2.98.9-3.78 2.29-1.61 2.8-.41 6.93 1.16 9.2.77 1.11 1.68 2.36 2.88 2.31 1.16-.05 1.59-.75 2.99-.75 1.4 0 1.79.75 3.01.72 1.24-.02 2.03-1.13 2.79-2.25.88-1.29 1.24-2.54 1.26-2.6-.03-.01-2.42-.93-2.45-3.7zM14.1 6.03c.64-.77 1.07-1.85.95-2.92-.92.04-2.03.61-2.69 1.38-.59.68-1.11 1.77-.97 2.82 1.02.08 2.07-.52 2.71-1.28z"/></svg>
         <h2>Mac</h2>
-        <span class="meta">macOS 12 or newer · DMG · 21 MB</span>
+        <span class="meta">macOS 12 or newer · DMG · 20 MB</span>
         <span class="button">Download</span>
       </a>
-      <a class="card" data-os="windows" href="files/Stagshare-1.0.0-windows.zip" download>
+      <a class="card" data-os="windows" href="files/Stagshare-1.1.0-windows.zip" download>
         <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5l7.4-1v7.1H3V5.5zm0 13l7.4 1v-7H3v6zm8.3 1.1L21 21v-8.4h-9.7v7zm0-15.2v7.2H21V3l-9.7 1.4z"/></svg>
         <h2>Windows</h2>
-        <span class="meta">Windows 10 or 11 · ZIP · 13 MB</span>
+        <span class="meta">Windows 10 or 11 · ZIP · 12 MB</span>
         <span class="button">Download</span>
       </a>
-      <a class="card" data-os="linux" href="files/Stagshare-1.0.0-linux-x64.tar.gz" download>
+      <a class="card" data-os="linux" href="files/Stagshare-1.1.0-linux-x64.tar.gz" download>
         <svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="3.5" r="2.2"/><circle cx="4.6" cy="16.3" r="2.2"/><circle cx="19.4" cy="16.3" r="2.2"/><path d="M12 6v3M7 15l2.5-1.5M17 15l-2.5-1.5" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
         <h2>Ubuntu / Linux</h2>
         <span class="meta">64-bit, Ubuntu 22.04+ · tar.gz · 10 MB</span>
@@ -127,7 +127,7 @@
       <div class="how">
         <div><b>1. Open it on both devices</b>Both on the same Wi-Fi or phone hotspot. They find each other automatically.</div>
         <div><b>2. Pick a device and files</b>Tap the other device, choose photos, videos or any files.</div>
-        <div><b>3. Enter the 4-digit code</b>The receiving device shows a code. Type it on the sender and the transfer starts.</div>
+        <div><b>3. Accept on the other device</b>The receiving device asks to accept or decline. Accept, and the files arrive.</div>
       </div>
     </section>
 
@@ -160,7 +160,7 @@
       <details data-os="linux">
         <summary>Ubuntu / Linux</summary>
         <ol>
-          <li>Extract it: <code>tar -xzf Stagshare-1.0.0-linux-x64.tar.gz</code></li>
+          <li>Extract it: <code>tar -xzf Stagshare-1.1.0-linux-x64.tar.gz</code></li>
           <li>Run <code>./Stagshare/stagshare</code></li>
           <li>Devices are found through Avahi (on by default in Ubuntu). If none show up, use <b>Connect by address</b>.</li>
         </ol>
@@ -168,7 +168,7 @@
       <p style="color: var(--muted)">Stagshare asks for an access code on first launch. Ask the person who shared this page for it.</p>
     </section>
 
-    <footer>Version 1.0.0 · Copyright © 2026 Devi Srinivas Vasamsetti</footer>
+    <footer>Version 1.1.0 · Copyright © 2026 Devi Srinivas Vasamsetti</footer>
   </main>
   <script>
     // Highlight the download and install steps for the visitor's device.
